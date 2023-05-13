@@ -50,7 +50,7 @@ export const MovieData = [
     id: Math.random(),
     image:
       "https://i.ibb.co/FDGqCmM/papers-co-ag74-interstellar-wide-space-film-movie-art-33-iphone6-wallpaper.jpg",
-    rating: 0.5,
+    rating: 3,
     name: "Interstellar",
     description:
       "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
