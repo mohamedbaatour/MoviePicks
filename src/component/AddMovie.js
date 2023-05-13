@@ -38,7 +38,19 @@ const AddMovie = ({ movies, setMovies }) => {
   return (
     <div class="add">
       <Button variant="outline-light" onClick={handleShow}>
-        Add A New Movie!
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          style={{ marginRight: "0.5rem" }}
+        >
+          <path
+            fill="grey"
+            d="M5 21h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2zm2-10h4V7h2v4h4v2h-4v4h-2v-4H7v-2z"
+          ></path>
+        </svg>
+        Add movie
       </Button>
 
       <Modal show={show} onHide={handleClose} scrollable={true}>

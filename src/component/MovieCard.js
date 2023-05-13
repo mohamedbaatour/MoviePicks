@@ -24,7 +24,6 @@ const MovieCard = ({ movie }) => {
               style={{
                 height: "25px",
                 width: "auto",
-                overflowY: "auto",
                 fontWeight: "bold",
               }}
             >
@@ -47,7 +46,9 @@ const MovieCard = ({ movie }) => {
                 height: "100px",
                 textAlign: "start",
                 overflow: "auto",
-                fontSize: "0.9rem",
+                fontSize: "0.85rem",
+                marginTop: "0.5rem",
+                lineHeight: "1.25rem",
                 opacity: 0.75,
               }}
             >

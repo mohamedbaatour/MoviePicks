@@ -47,7 +47,7 @@ const Navbarm = ({
             Filter By
           </span>
           <ReactStars
-            count={6}
+            count={5}
             onChange={ratingChanged}
             size={20}
             isHalf={true}
