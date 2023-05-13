@@ -1,0 +1,52 @@
+.cardimage {
+  height: 100%;
+  opacity: 0.85;
+  object-fit: cover;
+  border-radius: 2rem;
+  transition: all ease-in 0.25s;
+}
+
+.cardimage:hover {
+  opacity: 1;
+}
+
+.cardex {
+  min-height: 32rem;
+  max-height: 32rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  border: none !important;
+  background: black !important;
+  cursor: pointer;
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.05) !important;
+}
+
+.cardex:hover .cardimage {
+  transform: scale(1.05);
+}
+
+.Navex {
+  background-color: rgba(255, 178, 169, 0.774);
+  border: solid white 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #00000030;
+}
+
+.cardbody {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.bodybg {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}

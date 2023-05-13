@@ -1,0 +1,10 @@
+.add {
+  background: black;
+}
+.popup * {
+  border: none;
+}
+
+.popup .form-control {
+  background: transparent;
+}
