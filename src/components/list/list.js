@@ -1,8 +1,8 @@
 import React from "react";
-import MovieCard from "./MovieCard";
+import Card from "../card/card";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 
-const MovieList = ({ movies, nameSearch, rateSearch }) => {
+const List = ({ movies, nameSearch, rateSearch }) => {
   const [parent] = useAutoAnimate(/* optional config */);
 
   const search = () => {
@@ -29,10 +29,10 @@ const MovieList = ({ movies, nameSearch, rateSearch }) => {
       }}
     >
       {search().map((movie) => {
-        return <MovieCard movie={movie} key={movie.id} />;
+        return <Card movie={movie} key={movie.id} />;
       })}
     </div>
   );
 };
 
-export default MovieList;
+export default List;
