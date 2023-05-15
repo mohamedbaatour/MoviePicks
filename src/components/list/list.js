@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../card/card";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
+import {Link} from "react-router-dom"
 
 const List = ({ movies, nameSearch, rateSearch }) => {
   const [parent] = useAutoAnimate(/* optional config */);
@@ -29,7 +30,13 @@ const List = ({ movies, nameSearch, rateSearch }) => {
       }}
     >
       {search().map((movie) => {
-        return <Card movie={movie} key={movie.id} />;
+        return (
+          <Link to={"/movie/" + movie.id}>
+            <Card movie={movie} key={movie.id} />
+          </Link>
+        );
+
+
       })}
     </div>
   );
