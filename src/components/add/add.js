@@ -6,9 +6,9 @@ import {
   Form,
   FloatingLabel,
 } from "react-bootstrap";
-import "./AddMovie.css";
+import "./add.css";
 
-const AddMovie = ({ movies, setMovies }) => {
+const Add = ({ movies, setMovies }) => {
   const [show, setShow] = useState(false);
   const [newTitle, setNewTitle] = useState(false);
   const [newRate, setNewRate] = useState(false);
@@ -117,4 +117,4 @@ const AddMovie = ({ movies, setMovies }) => {
     </div>
   );
 };
-export default AddMovie;
+export default Add;

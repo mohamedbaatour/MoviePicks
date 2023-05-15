@@ -1,13 +1,13 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card as CardBootstrap } from "react-bootstrap";
 import ReactStars from "react-rating-stars-component";
-import "./MovieCard.css";
+import "./card.css";
 
-const MovieCard = ({ movie }) => {
+const Card = ({ movie }) => {
   return (
     <div style={{ marginTop: "60px" }}>
       {
-        <Card
+        <CardBootstrap
           className="cardex"
           style={{
             width: "19em",
@@ -16,11 +16,11 @@ const MovieCard = ({ movie }) => {
             boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #00000030",
           }}
         >
-          <Card.Img className="cardimage" src={movie.image} alt="pic" />
+          <CardBootstrap.Img className="cardimage" src={movie.image} alt="pic" />
 
           <div className="bodybg"></div>
-          <Card.Body className="cardbody">
-            <Card.Title
+          <CardBootstrap.Body className="cardbody">
+            <CardBootstrap.Title
               style={{
                 height: "25px",
                 width: "auto",
@@ -28,7 +28,7 @@ const MovieCard = ({ movie }) => {
               }}
             >
               {movie.name}
-            </Card.Title>
+            </CardBootstrap.Title>
             <ReactStars
               count={5}
               size={20}
@@ -40,7 +40,7 @@ const MovieCard = ({ movie }) => {
               value={movie.rating}
               edit={false}
             />
-            <Card.Text
+            <CardBootstrap.Text
               style={{
                 width: "255px",
                 height: "100px",
@@ -53,11 +53,11 @@ const MovieCard = ({ movie }) => {
               }}
             >
               {movie.description}
-            </Card.Text>
-          </Card.Body>
-        </Card>
+            </CardBootstrap.Text>
+          </CardBootstrap.Body>
+        </CardBootstrap>
       }
     </div>
   );
 };
-export default MovieCard;
+export default Card;

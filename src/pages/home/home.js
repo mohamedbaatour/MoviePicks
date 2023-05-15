@@ -1,16 +1,19 @@
-import "./App.css";
-import { MovieData } from "./component/MovieData";
 import { useState } from "react";
-import Navbarm from "./component/Navbarm";
-import MovieList from "./component/MovieList";
+// data
+import { data } from "../../store/data";
+// components
+import Nav from "../../components/nav/nav";
+import MovieList from "../../components/list/list";
+// css
+import "./home.css";
 
-function App() {
-  const [movies, setMovies] = useState(MovieData);
+function Home() {
+  const [movies, setMovies] = useState(data);
   const [nameSearch, setNameSearch] = useState("");
   const [rateSearch, setRateSearch] = useState(0);
   return (
     <div className="App">
-      <Navbarm
+      <Nav
         setMovies={setMovies}
         movies={movies}
         nameSearch={nameSearch}
@@ -27,4 +30,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

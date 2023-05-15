@@ -1,12 +1,14 @@
+// react components
+import { default as NavBootstrap } from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import ReactStars from "react-rating-stars-component";
-import AddMovie from "./AddMovie";
+// local components
+import Add from "../add/add";
 
-const Navbarm = ({
+const Nav = ({
   nameSearch,
   setNameSearch,
   rateSearch,
@@ -68,11 +70,11 @@ const Navbarm = ({
         </div>
 
         <Navbar id="navbarScroll">
-          <Nav
+          <NavBootstrap
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight: "100px" }}
             navbarScroll
-          ></Nav>
+          ></NavBootstrap>
           <Form className="d-flex">
             <Form.Control
               type="search"
@@ -85,10 +87,10 @@ const Navbarm = ({
           </Form>
         </Navbar>
 
-        <AddMovie movies={movies} setMovies={setMovies} />
+        <Add movies={movies} setMovies={setMovies} />
       </Container>
     </Navbar>
   );
 };
 
-export default Navbarm;
+export default Nav;
